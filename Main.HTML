@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>최지욱 포트폴리오</title>
+        <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&family=Nanum+Brush+Script&family=Song+Myung&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" type="image/x-icon" href = "./아이콘 이미지/리베린 아이콘.png">
+
+        <style>
+            .floating-menu { position: fixed; left: 50px; top: 450px; z-index: 100; width: 128px;  margin: -220px 0 0 0; background-color: rgb(159, 160, 253);; background: url("") 0 0 no-repeat; }
+            .floating-menu li { margin: 0; *float: left; }
+
+            .floating-menu ul {list-style: none;}
+
+            .floating-menu a { 
+                background-color: rgb(159, 160, 253); 
+                font-family: 'Do Hyeon';
+                display: block;
+                width: 100px;
+                padding: 10px 0; 
+                color: black; 
+                text-align: center; 
+                border: 2px solid rgb(159, 160, 253);
+                text-decoration: none;
+            }
+
+            .floating-menu a.menu-07 { height: 20px; background: none; }
+            .floating-menu li.on a { background-color: #333; color: rgb(159, 160, 253);background: url("") 0 0 no-repeat;}
+            .floating-menu li.on a.menu-01 {background-position: -131px 0; }
+            .floating-menu li.on a.menu-02 {background-position: -131px -104px; }
+            .floating-menu li.on a.menu-03 {background-position: -131px -219px; }
+            .floating-menu li.on a.menu-04 {background-position: -131px -323px; }
+            .floating-menu li.on a.menu-05 {background-position: -131px -430px; }
+            .floating-menu li.on a.menu-06 {background-position: -131px -540px; }
+        </style>
+
+        <style>
+            .logo{position: fixed; left:5px; top:10px;}
+        </style>
+
+        <style>
+            #profile{height: 950px; background-color: white;}
+            .mainprofile{position: fixed; width: 425px; height: 850px;background-color: rgb(159, 160, 253);margin: 20px 0 0 200px;}
+            .job{font-size: 45px; font-family: 'Do Hyeon'; color: white; margin:35px 0 5px 20px;}
+            .img{width: 280px; height: 280px; border-radius: 30%; border: 10px solid rgb(83, 98, 228); margin: 30px 30px 0 40px;}
+            .introduce{font-size: 22px; font-family: 'Do Hyeon'; color: black; margin:5px 0 5px 20px;}
+            .motto{font-size: 30px; font-family: 'Do Hyeon'; color: black; margin:5px 0 5px 20px;}
+
+            .title{font-size: 40px; font-family: 'Do Hyeon'; color: rgb(159, 160, 253); margin:5px 0 5px 20px;}
+            .aboutme{font-size: 20px; font-family: 'Do Hyeon'; color: black; margin:5px 0 3px 20px;}
+            .icon{margin:5px 0 5px 2px;}
+
+            .me{position:absolute; width: 450px; left: 670px; top : 20px;}
+            .education{position:absolute; width: 450px; left: 670px; top: 320px;}
+            .award{position:absolute; width: 450px; left: 670px; top: 500px;}
+            .career{position:absolute; width: 600px; left: 1150px; top : 20px;}
+            .skills{position:absolute; width: 600px; left: 1150px; top : 350px;}
+
+            #skills {
+                appearance: none;
+                width: 60%;
+                height: 10px;
+                margin:5px 0 5px 20px;
+            }
+            #skills::-webkit-progress-bar {
+                background:#f0f0f0;
+                border-radius:10px;
+                box-shadow: inset 3px 3px 10px #ccc;
+            }
+            #skills::-webkit-progress-value {
+                border-radius:10px;
+                background: #e5ecea;
+                background: -webkit-linear-gradient(to right, #95bdf8, #2f1d97);
+                background: linear-gradient(to right, #95bdf8, #2f1d97);
+            }
+        </style>
+ 
+        <style>
+            #project1{width : 100%; height: 950px; background-color: rgb(219, 213, 255);}
+            .mainimg{width: 600px;  position:absolute; left: 670px; top :1050px;}
+            .subimg1{width: 450px;  position:absolute; left: 1300px; top :1450px;}
+            .subimg2{width: 450px;  position:absolute; left: 1300px; top :1050px;}
+
+            .projecttext{width:500px; position: absolute; left: 670px; top :1560px;}
+            .projecttitle{width:600px; position: absolute; left: 670px; top :1420px; font-size: 60px; font-family: 'Do Hyeon'; color: rgb(83, 98, 228);}
+            .projectcontent{width:600px; font-size:20px; font-family: 'Do Hyeon'; color: black; margin:5px 0 5px 20px;}
+        </style>
+
+        <style>
+            #project2{width : 100%; height: 950px; background-color: white;}
+            #project2 .mainimg{width: 700px;  position:absolute; left: 1150px; top :1950px;}
+            #project2 .subimg1{width: 450px;  position:absolute; left: 670px; top :2380px;}
+            #project2 .subimg2{width: 200px;  position:absolute; left: 1130px; top :2350px;}
+            #project2 .subimg3{width: 200px;  position:absolute; left: 1280px; top :2350px;}
+            #project2 .subimg4{width: 200px;  position:absolute; left: 1430px; top :2270px;}
+            #project2 .subimg5{width: 400px;  position:absolute; left: 1500px; top :2530px;}
+            #project2 .subimg6{width: 100px;  position:absolute; left: 670px; top :2650px;}
+            #project2 .subimg7{width: 100px;  position:absolute; left: 830px; top :2650px;}
+            #project2 .subimg8{width: 100px;  position:absolute; left: 1000px; top :2645px;}
+
+            #project2 .projecttext{width:500px; position: absolute; left: 670px; top :2060px;}
+            #project2 .projecttitle{width:600px; position: absolute; left: 670px; top :1900px; font-size: 60px; font-family: 'Do Hyeon'; color: rgb(83, 98, 228);}
+            #project2 .projectcontent{width:600px; font-size:20px; font-family: 'Do Hyeon'; color: black; margin:5px 0 5px 20px;}
+
+        </style>
+ 
+        <style>
+            #project3{width : 100%; height: 950px; background-color: rgb(219, 213, 255);}
+            #project3 .mainimg{width: 600px;  position:absolute; left: 670px; top :2900px;}
+            #project3 .subimg1{width: 450px;  position:absolute; left: 670px; top :3260px;}
+            #project3 .subimg2{width: 200px;  position:absolute; left: 1130px; top :3260px;}
+            #project3 .subimg3{width: 300px;  position:absolute; left: 1130px; top :3470px;}
+            #project3 .subimg4{width: 200px;  position:absolute; left: 1430px; top :3470px;}
+
+            #project3 .projecttext{width:500px; position: absolute; left: 1350px; top :3000px;}
+            #project3 .projecttitle{width:600px; position: absolute; left: 1350px; top :2850px; font-size: 60px; font-family: 'Do Hyeon'; color: rgb(83, 98, 228);}
+            #project3 .projectcontent{width:600px; font-size:20px; font-family: 'Do Hyeon'; color: black; margin:5px 0 5px 20px;}
+        </style>
+
+        <style>
+            #project4{width : 100%; height: 950px; background-color: white;}
+
+            #project4 .projectvideo{position:absolute; left: 800px; top :3850px;}
+
+            #project4 .projecttext{width:500px; position: absolute; left: 700px; top :4450px;}
+            #project4 .projecttitle{width:600px; position: absolute; left: 700px; top :4300px; font-size: 60px; font-family: 'Do Hyeon'; color: rgb(83, 98, 228);}
+            #project4 .projectcontent{width:600px; font-size:20px; font-family: 'Do Hyeon'; color: black; margin:5px 0 5px 20px;}
+        </style>
+
+
+
+        <style>       
+            
+            #webapp{width : 100%; height: 950px; background-color: rgb(219, 213, 255);}
+            #webapp canvas { background: #eee; display: block; margin: 0 auto; position: absolute; left:700px; top: 4800px ;}
+            #webapp .projecttitle{width:600px; position: absolute; left: 700px; top :5150px; font-size: 60px; font-family: 'Do Hyeon'; color: rgb(83, 98, 228);}
+            #webapp .startbtn{width : 100px; position: absolute; left: 1200px; top: 4900px; font-size: 20px; font-family: 'Do Hyeon'; color: black; border: rgb(83, 98, 228);  background-color: rgb(83, 98, 228);}
+            
+            #webapp .projecttext{width:500px; position: absolute; left: 700px; top :5300px;}
+            #webapp .projectcontent{width:600px; font-size:20px; font-family: 'Do Hyeon'; color: black; margin:5px 0 5px 20px;}
+        </style>
+      
+
+    </head>
+    <body>
+        <div class="floating-menu">
+            <ul>
+                <li class="m"><a href="#profile" class="menu-01"><span>About Me</span></a></li><br>
+                <li class="m"><a href="#project1" class="menu-02"><span>Project1</span></a></li><br>
+                <li class="m"><a href="#project2" class="menu-03"><span>Project2</span></a></li><br>
+                <li class="m"><a href="#project3" class="menu-04"><span>Project3</span></a></li><br>
+                <li class="m"><a href="#project4" class="menu-05"><span>Project4</span></a></li><br>
+                <li class="m"><a href="#webapp" class="menu-06"><span>Application</span></a></li><br>
+                <li class="btn-top"><a href="#profile" class="menu-07"><span>Top</span></a></li>
+            </ul>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script>
+                $(document).ready(function () {
+
+                    $("a").on('click', function (event) {
+
+                        if (this.hash !== "") {
+
+                            event.preventDefault();
+
+                            var hash = this.hash;
+
+                            $('html, body').animate({
+
+                                scrollTop: $(hash).offset().top
+
+                            }, 800, function () {
+
+                                window.location.hash = hash;
+
+                            });
+                        }
+                    });
+                });
+            </script>​
+        </div>
+
+        <div class ="logo">
+            <a href="Main.HTML"><img src ="아이콘 이미지/로고.png" alt = "로고"></a>
+        </div>
+
+
+        <header id = "profile">
+            
+            <div class = "mainprofile">
+                <img class = "img" src = "./프로필 사진/포트폴리오용 사진.png " alt="프로필 사진">
+                <p class ="job">GAME PROGRAMMER, DIRECTOR</p>
+                <br>
+                <p class ="motto">상상을 현실로!</p>
+                <br>
+                <p class = "introduce">상상만 하던 게임</p>
+                <p class = "introduce">어떤 유저에게든 재미있는 게임</p>
+                <p class = "introduce">항상 새로운 경험을 제공 할 수 있는 게임</p>
+                <br>
+                <p class = "introduce">다양한 게임을 제작할 수 있는 기획자,</p>
+                <p class = "introduce">프로그래머가 되고자 합니다.</p>
+            </div>
+
+            <div class = "me">
+                <p class = "title">INTRODUCE</p>
+
+                <p class = "aboutme">최지욱</p>
+
+                <p class = "aboutme">2002.10.17</p>
+
+                <p class = "aboutme">010-8861-5192</p>
+
+                <p class = "aboutme">충청북도 충주시 연수동</p>
+
+                <p class = "aboutme">jiuk5192@gmail.com</p>
+
+                <p class = "aboutme">
+                    <a class = "icon" href="https://www.instagram.com/ji_uk_/"><img src = "./아이콘 이미지/인스타 아이콘.png" alt = "인스타 아이콘"></a>
+                    <a class = "icon" href="https://github.com/choijiuk1017"><img  src = "./아이콘 이미지/깃허브 아이콘.png" alt = "인스타 아이콘"></a>
+                </p>
+                
+            </div>
+
+            <div class = "education">
+                <p class = "title">EDUCATION</p>
+                <p class = "aboutme">2021.03 &nbsp; 홍익대학교 게임 소프트웨어 전공 입학</p>
+                <p class = "aboutme">2021.02 &nbsp; 충주 고등학교 졸업</p>
+            </div>
+
+            <div class = "award">
+                <p class = "title">AWARD</p>
+                <p class = "aboutme">2022.03 &nbsp; 홍익대학교 교내 게임 공모전 기획 부문 우수상</p>
+            </div>
+
+            <div class = "career">
+                <p class = "title">CAREER</p>
+                <p class = "aboutme">2021.01 &nbsp; 인디팀 'LIBERIN' 공동 설립</p>
+                <p class = "aboutme">2021.03 ~ 2021.07 &nbsp; 인디게임 'BAR MEMORIA' GIGDC 공모전 참가</p>
+                <p class = "aboutme">2021.07 ~ 2022.02 &nbsp; 인디게임 'INSOMNIA' 기획 및 프로그래밍</p>
+                <p class = "aboutme">2022.02 ~ 2023.02 &nbsp; 동아리 'I2P x 02 CUBE' 기획 팀장</p>
+                <p class = "aboutme">2022.03 ~ 2023.02 &nbsp; 동아리 'I2P x 02 CUBE' 개발 팀 '두콩두콩' 팀장</p>
+                <p class = "aboutme">2022.03 ~ 2022.05 &nbsp; 동아리 'I2P x 02 CUBE' 기획 학술회 진행</p>
+                <p class = "aboutme">2022.04 ~ 2023.03 &nbsp; 인디게임 'MoonLight' 기획 및 프로그래밍</p>
+            </div> 
+
+            <div class = "skills">
+                <p class = "title">SKILLS</p>
+                
+                <p class = "aboutme" >Phython </p>
+                <progress id = "skills" value="6" max="10"></progress>
+                    
+                <p class = "aboutme">C++ </p>
+                <progress id = "skills" value="8" max="10"></progress>
+                    
+                <p class = "aboutme">C# </p>
+                <progress id = "skills" value="8" max="10"></progress>
+                    
+                <p class = "aboutme">HTML</p>
+                <progress id = "skills" value="7" max="10"></progress>
+                    
+                <p class = "aboutme">JAVA</p>
+                <progress id = "skills" value="7" max="10"></progress>
+                
+                <p class = "aboutme">WORD </p>  
+                <progress id = "skills" value="8" max="10"></progress>    
+                
+                <p class = "aboutme">EXCEL </p>  
+                <progress id = "skills" value="7" max="10"></progress>
+
+                <p class = "aboutme">PPT </p>  
+                <progress id = "skills" value="8" max="10"></progress>
+            </div>
+
+        </header>
+
+        <article id="project1">
+            <div class = "projectimg">
+                <img class = "mainimg" src="./프로젝트1 이미지/mainimg.png" alt = "프로젝트1 이미지 1">
+                <img class = "subimg1" src="./프로젝트1 이미지/ingameimg.png" alt = "프로젝트1 이미지 2">
+                <img class = "subimg2" src="./프로젝트1 이미지/ingameimg2.png" alt = "프로젝트1 이미지 3">
+            </div>
+
+            <p class = "projecttitle">Project Bar Memoria</p>
+
+            <div class = "projecttext">
+                
+                <p class = "projectcontent"><b>제작 기간</b></p>
+                <p class = "projectcontent">2021.03 ~ 2022.07</p>
+                <p class = "projectcontent"><b>프로젝트 참여 내용</b></p>
+                <p class = "projectcontent">1. 컨셉 및 시스템 기획 참여</p>
+                <p class = "projectcontent">2. UI 시스템, 저장 시스템, 메인 씬 제작</p>
+                <p class = "projectcontent"><b>기술 스택</b></p>
+                <p class = "projectcontent">C#(UNITY)
+                    <a class = "projectcontent" href = "./기획서/Liberin_GIGDC_Summary_DESIGN.pdf">GIGDC 요약 기획서</a>
+                    <a class = "projectcontent" href = "./기획서/gigdc_Bar_memoria_detail_design.pdf">GIGDC 상세 기획서</a>
+                </p>
+                
+            </div>
+            
+        </article>
+        
+        <article id="project2">
+            <div class = "projectimg">
+                <img class = "mainimg" src="./프로젝트2 이미지/mainimg.png" alt = "프로젝트2 이미지 1">
+                <img class = "subimg1" src="./프로젝트2 이미지/ingameimg1.png" alt = "프로젝트2 이미지 2">
+                <img class = "subimg2" src="./프로젝트2 이미지/player1.gif" alt = "프로젝트2 이미지 3">
+                <img class = "subimg3" src="./프로젝트2 이미지/player2.gif" alt = "프로젝트2 이미지 4">
+                <img class = "subimg4" src="./프로젝트2 이미지/player3.gif" alt = "프로젝트2 이미지 5">
+                <img class = "subimg5" src="./프로젝트2 이미지/player4.gif" alt = "프로젝트2 이미지 6">
+                <img class = "subimg6" src="./프로젝트2 이미지/monster1.gif" alt = "프로젝트2 이미지 7">
+                <img class = "subimg7" src="./프로젝트2 이미지/monster2.gif" alt = "프로젝트2 이미지 8">
+                <img class = "subimg8" src="./프로젝트2 이미지/monster3.gif" alt = "프로젝트2 이미지 9">
+               
+
+            <p class = "projecttitle">Project INSOMNIA</p>
+
+            <div class = "projecttext">
+                
+                <p class = "projectcontent"><b>제작 기간</b></p>
+                <p class = "projectcontent">2021.07 ~ 2022.02</p>
+                <p class = "projectcontent"><b>프로젝트 참여 내용</b></p>
+                <p class = "projectcontent">1. 컨셉 및 시스템 기획 참여</p>
+                <p class = "projectcontent">2. 플레이어 시스템, 저장 시스템, 몬스터 시스템 제작</p>
+                <p class = "projectcontent"><b>기술 스택</b></p>
+                <p class = "projectcontent">C#(UNITY)
+                    <a class = "projectcontent" href = "./기획서/INSOMNIA_Concept_Project_Proposal_CJU.pdf">컨셉 기획서</a>
+                </p>
+                
+            </div>
+        </article>
+
+        <article id = "project3">
+            <div class = "projectimg">
+                <img class = "mainimg" src="./프로젝트3 이미지/ingameimg1.png" alt = "프로젝트3 이미지 1">
+                <img class = "subimg1" src="./프로젝트3 이미지/player.png" alt = "프로젝트3 이미지 2">
+                <img class = "subimg2" src="./프로젝트3 이미지/player2.png" alt = "프로젝트3 이미지 3">
+                <img class = "subimg3" src="./프로젝트3 이미지/monster.png" alt = "프로젝트3 이미지 4">
+                <img class = "subimg4" src="./프로젝트3 이미지/monster2.png" alt = "프로젝트3 이미지 5">
+
+            </div>
+            <p class = "projecttitle">Project MoonLight</p>
+            <div class = "projecttext">
+                
+                <p class = "projectcontent"><b>제작 기간</b></p>
+                <p class = "projectcontent">2022.04 ~ </p>
+                <p class = "projectcontent"><b>프로젝트 참여 내용</b></p>
+                <p class = "projectcontent">1. 전투 시스템 기획 참여</p>
+                <p class = "projectcontent">2. 플레이어 시스템, 저장 시스템, 몬스터 시스템 제작</p>
+                <p class = "projectcontent"><b>기술 스택</b></p>
+                <p class = "projectcontent">C#(UNITY)
+                    <a class = "projectcontent" href = "./기획서/팀 무명 전투시스템 기획서.pdf">전투 시스템 기획서</a>
+                </p>
+                
+            </div>
+        </article>
+
+        <article id = "project4">
+
+            <div class = "projectvideo">
+                <iframe width="800" height="500" src="https://www.youtube.com/embed/z3mxz5HSKsk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <p class = "projecttitle">Project MapleSurvival</p>
+
+            <div class = "projecttext">
+                
+                <p class = "projectcontent"><b>제작 기간</b></p>
+                <p class = "projectcontent">2022.04 ~ 2022.06</p>
+                <p class = "projectcontent"><b>프로젝트 참여 내용</b></p>
+                <p class = "projectcontent">1. 게임 컨셉 및 시스템 기획</p>
+                <p class = "projectcontent">2. 플레이어 시스템, 몬스터 시스템 제작</p>
+                <p class = "projectcontent"><b>기술 스택</b></p>
+                <p class = "projectcontent">Lua(NEXON Project MOD)
+                    <a class = "projectcontent" href = "./기획서/C177038_최지욱_ProjectMOD_컨셉기획서_2차 수정.pdf">컨셉 기획서</a>
+                </p>
+                
+            </div>
+        </article>
+
+        <article id = "webapp">
+            
+            <canvas id="myCanvas" width="480px" height="400px"></canvas>
+            <input class = "startbtn" type = "button" id = "start" name ="" value = "START" onclick="draw()">
+            <script src = "Breakwall.js"></script>
+                
+            
+            <p class = "projecttitle">Application BreakWall</p>
+
+            <div class = "projecttext">
+
+                <p class = "projectcontent"><b>이용 방법</b></p>
+                <p class = "projectcontent">마우스의 방향을 따라가는 바를 이용해 공을 튕겨 모든 벽돌을 파괴</p>
+                <p class = "projectcontent"><b>앱 내용</b></p>
+                <p class = "projectcontent">HTML과 JAVA Script를 이용한 미니 게임</p>
+                <p class = "projectcontent">총 유저에게는 총 3번의 기회가 있으며 제한된 기회 이내에 모든 벽돌을 부실 경우 게임 클리어</p>
+                <p class = "projectcontent">부시지 못할 경우 게임 오버</p>
+                <p class = "projectcontent"><b>기술 스택</b></p>
+                <p class = "projectcontent">HTML, JAVA Script
+                    <a class = "projectcontent" href = "Breakwall.HTML">새창에서 페이지 열기</a>
+                </p>
+                
+            </div>
+        </article>
+
+        
+            
+        
+       
+    </body>
+</html>
